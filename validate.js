@@ -25,7 +25,7 @@ function checkfname() {
 
 function checkCandiNo() {
   let candi = (document.getElementById("candi").value).trim();
-  if (isNaN(candi) || candi < 1) {
+  if (candi < 1 || candi > 10 && candi.length != 0) {
     return false;
   } else {
     return true;
